@@ -1,0 +1,25 @@
+{
+    "name": "app/auth",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ilyas Serter",
+            "email": "info@ilyasserter.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\Auth\\Providers\\AuthServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\Auth\\": ""
+        }
+    }
+}
