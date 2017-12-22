@@ -7,6 +7,9 @@
             "email": "info@ilyasserter.com"
         }
     ],
+    "files": [
+        "start.php"
+    ],
     "extra": {
         "laravel": {
             "providers": [

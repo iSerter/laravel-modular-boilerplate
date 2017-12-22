@@ -2,8 +2,9 @@
 
 namespace App\Modules\Auth\UI\Http\Web\Controllers;
 
-use App\Core\Http\Controllers\Controller;
+use App\Core\Http\Web\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Artisan;
 
 class LoginController extends Controller
 {

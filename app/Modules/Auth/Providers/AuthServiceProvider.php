@@ -20,14 +20,13 @@ class AuthServiceProvider extends \Illuminate\Auth\AuthServiceProvider
      */
     public function boot()
     {
+        $this->loadRoutesFrom(__DIR__ . '/../UI/Http/Api/routes.php');
+        $this->loadRoutesFrom(__DIR__ . '/../UI/Http/Web/routes.php');
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
         $this->registerFactories();
-
         $this->loadMigrationsFrom(__DIR__ . '/../Data/Migrations');
-        $this->loadRoutesFrom(__DIR__ . '/../UI/Http/Api/routes.php');
-        $this->loadRoutesFrom(__DIR__ . '/../UI/Http/Web/routes.php');
     }
 
     /**

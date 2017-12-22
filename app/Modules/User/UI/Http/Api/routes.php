@@ -1,6 +1,13 @@
 <?php
 
-Route::group(['middleware' => 'web', 'prefix' => 'user', 'namespace' => 'App\\Modules\User\UI\Http\Web\Controllers'], function()
-{
-    Route::get('/', 'UserController@index');
+
+$api = app('Dingo\Api\Routing\Router');
+
+$api->version('v1', [
+    'prefix' => 'user',
+    'namespace' => 'App\Modules\Auth\UI\Http\Api\Controllers',
+], function ($api) {
+
+    $api->get('/', 'UserController@index');
+
 });

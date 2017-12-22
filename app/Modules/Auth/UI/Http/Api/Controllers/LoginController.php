@@ -2,12 +2,14 @@
 
 namespace App\Modules\Auth\UI\Http\Api\Controllers;
 
+use App\Core\Http\Api\Controller;
+
 
 /**
  * Class LoginController
  * @package App\Modules\Auth\UI\Http\Api\Controllers
  */
-class LoginController
+class LoginController extends Controller
 {
     /**
      * Show all users

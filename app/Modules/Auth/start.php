@@ -13,5 +13,6 @@
 */
 
 //if (!app()->routesAreCached()) {
+//    require __DIR__ . '/UI/Http/Api/routes.php';
 //    require __DIR__ . '/UI/Http/Web/routes.php';
 //}

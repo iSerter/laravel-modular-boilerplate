@@ -2,8 +2,8 @@
 
 namespace App\Modules\Auth\UI\Http\Web\Controllers;
 
-use App\Core\User;
-use App\Core\Http\Controllers\Controller;
+use App\Core\Http\Web\Controller;
+use App\Modules\User\Data\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
